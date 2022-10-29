@@ -78,9 +78,6 @@ private:
     Standard_Integer myXmax;
     Standard_Integer myYmax;
 
-    //! save the degenerate mode state.
-    Standard_Boolean myDegenerateModeIsOn;
-
     //! rubber rectangle for the mouse selection.
     QRubberBand* myRectBand;
 

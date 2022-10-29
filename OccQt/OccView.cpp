@@ -42,7 +42,6 @@ OccView::OccView(QWidget* parent)
     myYmin(0),
     myXmax(0),
     myYmax(0),
-    myDegenerateModeIsOn(Standard_True),
     myRectBand(NULL)
 {
     // No Background
