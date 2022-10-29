@@ -1,6 +1,4 @@
-#ifndef _OCCVIEW_H_
-#define _OCCVIEW_H_
-
+#pragma once
 #include <QOpenGLWidget>
 
 #include <AIS_InteractiveContext.hxx>
@@ -82,5 +80,3 @@ private:
     QRubberBand* myRectBand;
 
 };
-
-#endif // _OCCVIEW_H_
