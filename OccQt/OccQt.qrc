@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/OccQt">
+        <file>Ifc.ico</file>
+        <file>open.bmp</file>
+        <file>new.bmp</file>
+    </qresource>
+</RCC>

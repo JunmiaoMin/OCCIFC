@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OccQtClass</class>
+ <widget class="QMainWindow" name="OccQtClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1047</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OccQt</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="OccQt.qrc">
+    <normaloff>:/OccQt/Ifc.ico</normaloff>:/OccQt/Ifc.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="action_IFC"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_IFC">
+   <property name="icon">
+    <iconset resource="OccQt.qrc">
+     <normaloff>:/OccQt/open.bmp</normaloff>:/OccQt/open.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="OccQt.qrc">
+     <normaloff>:/OccQt/new.bmp</normaloff>:/OccQt/new.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="OccQt.qrc"/>
+ </resources>
+ <connections/>
+</ui>
