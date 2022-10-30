@@ -61,8 +61,8 @@ void OccQt::openIfc()
 			IfcGeom::Kernel kernel(&file);
 			IfcGeom::IteratorSettings settings;
 			settings.set(IfcGeom::IteratorSettings::Setting::USE_WORLD_COORDS, true);
-#ifdef WNT
 			IfcSchema::IfcProduct::list::ptr products = file.instances_by_type<IfcSchema::IfcProduct>();
+#ifdef WNT
 			QWinTaskbarProgress* windowsTaskbarProgress = myWindowsTaskbarButton->progress();//设置进度指示器
 			windowsTaskbarProgress->setRange(0, products->size());
 			windowsTaskbarProgress->show();
