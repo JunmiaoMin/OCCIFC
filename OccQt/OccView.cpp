@@ -12,7 +12,7 @@
 #include <Aspect_Handle.hxx>
 #include <Aspect_DisplayConnection.hxx>
 
-#ifdef WNT
+#ifdef _MSC_VER
 #include <WNT_Window.hxx>
 #elif defined(__APPLE__) && !defined(MACOSX_USE_GLX)
 #include <Cocoa_Window.hxx>
@@ -74,7 +74,7 @@ void OccView::init()
     WId window_handle = (WId)winId();
 
     // Create appropriate window for platform
-#ifdef WNT
+#ifdef _MSC_VER
     Handle(WNT_Window) wind = new WNT_Window((Aspect_Handle)window_handle);
 #elif defined(__APPLE__) && !defined(MACOSX_USE_GLX)
     Handle(Cocoa_Window) wind = new Cocoa_Window((NSView*)window_handle);

@@ -5,7 +5,7 @@
 #include <QDockWidget>
 #include <QFileDialog>
 #include <QStandardPaths>
-#ifdef WNT
+#ifdef _MSC_VER
 #include <QWinTaskbarProgress>
 #endif
 #include <QProgressDialog>
@@ -31,7 +31,7 @@ OccQt::OccQt(QWidget *parent)
 {
     ui.setupUi(this);
     myOccView = new OccView(this);
-#ifdef WNT
+#ifdef _MSC_VER
 	myWindowsTaskbarButton = new QWinTaskbarButton(this);
 	myWindowsTaskbarButton->setWindow(windowHandle());
 #endif
@@ -62,7 +62,7 @@ void OccQt::openIfc()
 			IfcGeom::IteratorSettings settings;
 			settings.set(IfcGeom::IteratorSettings::Setting::USE_WORLD_COORDS, true);
 			IfcSchema::IfcProduct::list::ptr products = file.instances_by_type<IfcSchema::IfcProduct>();
-#ifdef WNT
+#ifdef _MSC_VER
 			QWinTaskbarProgress* windowsTaskbarProgress = myWindowsTaskbarButton->progress();//设置进度指示器
 			windowsTaskbarProgress->setRange(0, products->size());
 			windowsTaskbarProgress->show();
@@ -78,7 +78,7 @@ void OccQt::openIfc()
 			myProgressBar->setRange(0, products->size());
 			for (IfcSchema::IfcProduct::list::it it = products->begin(); it != products->end(); ++it)
 			{
-#ifdef WNT
+#ifdef _MSC_VER
 				windowsTaskbarProgress->setValue(windowsTaskbarProgress->value() + 1);
 #endif
 				myProgressBar->setValue(myProgressBar->value() + 1);
@@ -142,7 +142,7 @@ void OccQt::openIfc()
 				}
 			}
 			myProgressBar->reset();
-#ifdef WNT
+#ifdef _MSC_VER
 			windowsTaskbarProgress->reset();
 #endif
 			myOccView->fitAll();

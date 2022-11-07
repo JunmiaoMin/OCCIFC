@@ -94,7 +94,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>SCHEMA_SEQ=(2x3)(4)(4x1)(4x2)(4x3_rc1)(4x3_rc2)(4x3_rc3)(4x3_rc4)(4x3);WNT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>SCHEMA_SEQ=(2x3)(4)(4x1)(4x2)(4x3_rc1)(4x3_rc2)(4x3_rc3)(4x3_rc4)(4x3);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>TKernel.lib;TKBO.lib;TKBool.lib;TKBRep.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKIGES.lib;TKMath.lib;TKMesh.lib;TKOffset.lib;TKOpenGl.lib;TKPrim.lib;TKService.lib;TKShHealing.lib;TKTopAlgo.lib;TKV3d.lib;TKXSBase.lib;IfcParse.lib;IfcGeom.lib;IfcGeom_ifc2x3.lib;IfcGeom_ifc4.lib;IfcGeom_ifc4x1.lib;IfcGeom_ifc4x2.lib;IfcGeom_ifc4x3.lib;IfcGeom_ifc4x3_rc1.lib;IfcGeom_ifc4x3_rc2.lib;IfcGeom_ifc4x3_rc3.lib;IfcGeom_ifc4x3_rc4.lib;bcrypt.lib;freetype.lib;OpenGL32.Lib;WS2_32.Lib;%(AdditionalDependencies)</AdditionalDependencies>

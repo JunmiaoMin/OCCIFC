@@ -3,7 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_OccQt.h"
 #include "OccView.h"
-#ifdef WNT
+#ifdef _MSC_VER
 #include <QWinTaskbarButton>
 #endif
 #include <QProgressBar>
@@ -22,7 +22,7 @@ private slots:
 private:
     Ui::OccQtClass ui;
     OccView* myOccView;
-#ifdef WNT
+#ifdef _MSC_VER
     QWinTaskbarButton* myWindowsTaskbarButton;
 #endif
     QProgressBar* myProgressBar;
