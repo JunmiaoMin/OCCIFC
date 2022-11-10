@@ -145,6 +145,8 @@
 #include <OpenGl_GraphicDriver.hxx>  
 #include <Graphic3d_GraphicDriver.hxx>  
 #include "IfcFile.h"
+#include <IfcGeomIterator.h>
+#include <thread>
 #ifdef USE_IFC4
 #include "Ifc4.h"
 #define IfcSchema Ifc4
@@ -152,7 +154,6 @@
 #include "Ifc2x3.h"
 #define IfcSchema Ifc2x3
 #endif
-#include "Kernel.h"
 #include "IfcGeomElement.h"
 using namespace std;
 #endif //PCH_H
