@@ -109,8 +109,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\EroMin\source\repos\IfcOpenshell\_deps\boost_1_74_0;C:\Users\EroMin\source\repos\IfcOpenshell\src\ifcparse;C:\OpenCASCADE-7.6.0-vc14-64\opencascade-7.6.0\inc;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\EroMin\source\repos\IfcOpenshell\_build-vs2019-x64\RelWithDebInfo;C:\OpenCASCADE-7.6.0-vc14-64\opencascade-7.6.0\win64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)inc\boost_1_74_0;$(SolutionDir)inc\ifcgeom_schema_agnostic;$(SolutionDir)inc\occt;$(SolutionDir)inc\ifcparse;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <LinkIncremental>false</LinkIncremental>
