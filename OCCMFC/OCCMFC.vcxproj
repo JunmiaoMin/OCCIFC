@@ -127,8 +127,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\EroMin\source\repos\IfcOpenshell\src\ifcgeom_schema_agnostic;C:\Users\EroMin\source\repos\IfcOpenshell\_deps\boost_1_74_0;C:\Users\EroMin\source\repos\IfcOpenshell\src\ifcparse;C:\Users\EroMin\source\repos\IfcOpenshell\_deps-vs2019-x64-installed\opencascade-7.5.3\inc;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\EroMin\source\repos\IfcOpenshell\_build-vs2019-x64\RelWithDebInfo;C:\Users\EroMin\source\repos\IfcOpenshell\_deps-vs2019-x64-installed\opencascade-7.5.3\win64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)inc\boost_1_74_0;$(SolutionDir)inc\ifcgeom_schema_agnostic;$(SolutionDir)inc\occt;$(SolutionDir)inc\ifcparse;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
